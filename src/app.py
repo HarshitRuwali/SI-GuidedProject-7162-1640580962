@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 
 app = Flask(__name__)
-model = load_model('/home/harshit/Developer/SI-GuidedProject-7162-1640580962/src/model.h5')
+model = load_model('model.h5')
 
 def predict(img):
     x = image.img_to_array(img)
